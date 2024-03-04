@@ -1,0 +1,88 @@
+.porque {
+    background-image: url(../img/voluntariado_porque_serlo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Cambia esto según tus necesidades */
+    background-position: center; /* Cambia esto según tus necesidades */
+    height: 550px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.porque__container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.beneficios {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.beneficio {
+    width: 45%;
+}
+
+.beneficio table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.beneficio td {
+    padding: 20px;
+    vertical-align: top;
+    border: 1px solid #ddd;
+    font-size: 20px; /* Aumenté el tamaño de la letra a 20px */
+}
+
+.beneficio h3 {
+    margin-bottom: 10px;
+}
+
+.beneficio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.beneficio li {
+    margin-bottom: 12px; /* Agregué más espacio vertical */
+    font-size: 22px; /* Tamaño de letra para los elementos li */
+}
+
+.table-header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+.row1 {
+    background-color: #fff; /* Color blanco */
+}
+  
+  .beneficio li:before {
+    content: '✓';
+    margin-right: 10px;
+    color: #466BAF; 
+  }
+/*! ============= Diseño responsivo para la pagina de porque ser voluntario============= */
+  @media (max-width: 820px) {
+    .beneficio td {
+        padding: 10px; /* Reduzco más el espacio de relleno */
+        font-size: 16px; /* Reduzco más el tamaño de la letra */
+    }
+
+    .beneficio li {
+        margin-bottom: 8px; /* Reduzco más el espacio vertical */
+        font-size: 14px; /* Reduzco más el tamaño de la letra */
+    }
+}

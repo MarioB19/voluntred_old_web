@@ -1,0 +1,76 @@
+.inicio {
+    background-image: url(../img/Voluntariado.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    height: 500px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.inicio__container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+  
+
+.contenido {
+    
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 0.3fr)); /* Columnas más pequeñas, ajustables */
+    gap: 1rem;
+}
+
+.contenido-texto,
+.contenido-imagen {
+    
+    background-color: #f0f0f0; /* Fondo gris claro, ajusta según sea necesario */
+    padding: 2rem;
+    text-align: justify; /* Texto justificado */
+    font-size: 22px;
+    line-height: 1.5; /* Ajusta el interlineado según tus preferencias */
+    opacity: 0; /* Establece la opacidad inicial a 0 */
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+.contenido-texto-titulo{
+    color: #890404;
+}
+.contenido-imagen img {
+    max-width: 100%; /* Hacer que la imagen sea más grande dentro de su contenedor */
+    height: auto;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/*! ============= Diseño responsivo para la pagina de inicio============= */
+@media (max-width: 820px) {
+    .inicio {
+        height: 300px; /* Ajusta la altura según tus preferencias */
+    }
+
+    .contenido {
+        grid-template-columns: 1fr; /* Una columna en lugar de dos */
+        gap: 1.5rem; /* Mayor espacio entre los elementos */
+    }
+
+    .contenido-texto,
+    .contenido-imagen {
+        padding: 1.5rem; /* Menor espacio de relleno */
+        font-size: 18px; /* Tamaño de fuente más pequeño */
+    }
+}
