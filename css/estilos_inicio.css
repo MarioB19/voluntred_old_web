@@ -20,6 +20,43 @@
     color: white;
 }
 
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Padding around the section */
+}
+
+.video-container {
+    width: 80%; 
+    max-width: 1200px; 
+    text-align: center; 
+}
+
+
+.video-text {
+    font-size: 3rem;
+    margin-bottom: 10px; 
+    color: #890404; 
+    font-weight: 700; 
+}
+
+
+
+.video-wrapper {
+    position: relative; /* Required for absolute positioning */
+    padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive video */
+    height: 0; /* Keeps the aspect ratio */
+}
+
+.video-wrapper iframe {
+    position: absolute; /* Absolute positioning for responsive iframe */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width for responsiveness */
+    height: 100%; /* Full height for responsiveness */
+}
+
   
 
 .contenido {
