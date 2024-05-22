@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descarga Automática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            color: #721c24;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+        }
+        #container {
+            background-color: #f5c6cb;
+            border: 1px solid #f1b0b7;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            display: inline-block;
+            padding: 0.75em 1.5em;
+            font-size: 1em;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 1em;
+        }
+        .button-red {
+            background-color: #d9534f;
+        }
+        .button-red:hover {
+            background-color: #c9302c;
+        }
+        .button-blue {
+            background-color: #5bc0de;
+        }
+        .button-blue:hover {
+            background-color: #31b0d5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Bienvenido</h1>
+        <p>La descarga de la aplicación debería comenzar automáticamente.</p>
+        <!-- Botón para redirigir al índice -->
+        <a href="index.html" class="button button-red">Ir al Inicio</a>
+        <!-- Botón para iniciar la descarga manualmente -->
+        <button class="button button-blue" onclick="manualDownload()">Descargar Manualmente</button>
+    </div>
+
+    <!-- Enlace oculto para la descarga -->
+    <a id="downloadLink" href="assets/VoluntRED.apk" download="VoluntRED.apk" style="display: none;">Descargar Archivo</a>
+
+    <script>
+        // Esperar a que el documento se haya cargado completamente
+        document.addEventListener("DOMContentLoaded", function() {
+            // Simular clic en el enlace de descarga
+            document.getElementById("downloadLink").click();
+        });
+
+        // Función para iniciar la descarga manualmente
+        function manualDownload() {
+            document.getElementById("downloadLink").click();
+        }
+    </script>
+</body>
+</html>

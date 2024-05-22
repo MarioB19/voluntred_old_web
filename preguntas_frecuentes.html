@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoluntRED</title>
+    <link rel="stylesheet" href="css/estilos_general.css">
+    <link rel="stylesheet" href="css/estilos_preguntas.css">
+</head>
+<body>
+    <nav class="menu">
+        <section class="menu__container">
+            <div class="menu__logo-container">
+                <a href="index.html" class="menu__logo">VoluntRED</a>
+        </div>
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="index.html" class="menu__link">Inicio</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="que_hacemos.html" class="menu__link">¿Qué hacemos? </a>
+    
+                    
+                </li>
+    
+                <li class="menu__item  menu__item--show">
+                    <a href="porque_ser_voluntario.html" class="menu__link">¿Porqué ser voluntario?  </a>
+    
+                   
+                </li>
+    
+                <li class="menu__item">
+                    <a href="preguntas_frecuentes.html" class="menu__link">Preguntas Frecuentes</a>
+                </li>
+    
+            </ul>
+
+            <div class="menu__hamburguer">
+                <img src="assets/menu.svg" class="menu__img">
+            </div>
+        </section>
+    </nav>
+        <main>
+            <h1 class="titulo">Preguntas Frecuentes</h1>
+            <div class="categorias" id="categorias">
+                <div class="categoria activa" data-categoria="voluntarios">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"/></svg>
+                    <p>Voluntarios</p>
+                </div>
+                <div class="categoria" data-categoria="App">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M6.02 7.389c.399-.285.85-.417 1.292-.417.944 0 1.852.6 2.15 1.599-.382-.294-.83-.437-1.281-.437-.458 0-.919.147-1.321.434-.799.57-1.153 1.541-.845 2.461-1.242-.89-1.247-2.747.005-3.64zm3.741 12.77c.994.334 4.071 1.186 7.635 3.841l6.604-4.71c-1.713-2.402-1.241-4.082-2.943-6.468-1.162-1.628-1.827-1.654-3.037-1.432l.599.84c.361.507-.405 1.05-.764.544l-.534-.75c-.435-.609-1.279-.229-2.053-.051l.727 1.019c.36.505-.403 1.051-.764.544l-.629-.882c-.446-.626-1.318-.208-2.095-.01l.769 1.078c.363.508-.405 1.049-.764.544l-3.118-4.366c-.968-1.358-3.088.083-2.086 1.489l4.605 6.458c-.494-.183-1.363-.349-1.93-.349-1.754 0-2.429 1.92-.222 2.661zm-3.286-2.159h-4.475v-14h10v6.688l2-.471v-8.217c0-1.104-.895-2-2-2h-10c-1.105 0-2 .896-2 2v18.678c-.001 2.213 3.503 3.322 7.005 3.322 1.812 0 3.619-.299 4.944-.894-2.121-.946-6.378-1.576-5.474-5.106z"/></svg>
+                    <p>Aplicacion Movil</p>
+                </div>
+                <div class="categoria" data-categoria="ONG">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 2h2v2h2v3.702l7 2.618v12.68h1v1h-24v-1h1v-11h6v-8h2v-2h2v-2h1v2zm3 3h-7v18h1v-2h5v2h1v-18zm-2 17h-3v1h3v-1zm8 1h1v-11.987l-6-2.243v14.23h1v-2h4v2zm-14-10h-5v10h1v-2h3v2h1v-10zm-2 9h-1v1h1v-1zm15 0h-2v1h2v-1zm-16-5v2h-1v-2h1zm2 0v2h-1v-2h1zm5-10v12h-1v-12h1zm10 11v1h-4v-1h4zm-8-11v12h-1v-12h1zm8 9v1h-4v-1h4zm-17-2v2h-1v-2h1zm2 0v2h-1v-2h1zm15 0v1h-4v-1h4zm0-2v1h-4v-1h4zm-8-9h-3v1h3v-1z"/></svg>
+                    <p>ONG's</p>
+                </div>
+                <div class="categoria" data-categoria="generales">
+                    <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22.587 14.624l-9.584-9.624h-4.928c.106.357.167.701.173 1.025.985.123 1.752.956 1.752 1.975 0 1.104-.896 2-2 2s-2-.896-2-2c0-.843.524-1.561 1.262-1.855.01-.337-.067-.731-.227-1.145h-2.035v8.005l9.623 9.582 7.964-7.963zm-14.489-7.604c-.088.215-.207.408-.362.568-.231.239-.472.394-.719.495.045.511.461.917.983.917.552 0 1-.448 1-1 0-.517-.399-.929-.902-.98zm15.902 7.605l-9.375 9.375-10.625-10.579v-5.914c-1.123-.512-2.394-1.091-4-1.091v-1c1.611 0 2.92.511 4 .994v-2.41h2.492c-1.054-1.53-3.181-3-6.492-3v-1c4.093 0 6.603 2.055 7.661 4h5.757l10.582 10.625zm-6.997 1.731l.521.521-.698.697-.54-.538c-.525.396-1.068.597-1.612.597-.652 0-1.272-.295-1.734-.753l.738-.739c.303.27.631.462 1.049.462.443 0 .896-.228 1.347-.679.361-.359.569-.736.621-1.122.102-.76-.489-1.258-1.078-1.258-.392 0-.875.184-1.475.563-1.225.773-2.402 1.243-3.413.232-.918-.917-.645-2.112-.076-2.938l-.653-.652.698-.699.626.627c.538-.45 1.097-.677 1.663-.677.665 0 1.286.316 1.761.792l-.744.744c-.731-.742-1.624-.545-2.276.106-.322.323-.52.675-.572 1.02-.122.81.6 1.218.961 1.218.338 0 .774-.174 1.456-.584.944-.563 1.593-.804 2.171-.804.513 0 .963.202 1.378.617 1.038 1.038.624 2.351-.119 3.247z"/></svg>
+                    <p>Dudas Generales</p>
+                </div>
+            </div>
+    
+            <div class="preguntas">
+    
+                <!-- Preguntas voluntario -->
+                <div class="contenedor-preguntas activo" data-categoria="voluntarios">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Cómo me registro como voluntario? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Registrarse es fácil y gratuito. Solo debes proporcionar algunos datos básicos, crear un nombre de usuario y contraseña, y listo. Una vez registrado, puedes buscar y aplicar a oportunidades de voluntariado.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Puedo buscar eventos según mis intereses?<img src="./img//plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">¡Sí! La plataforma te permite encontrar y filtrar eventos de acuerdo a tus causas favoritas, horarios, ubicación y más. Así puedes identificar fácilmente oportunidades alineadas.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Cómo valido mi asistencia a eventos?<img src="./img//plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Durante el evento, la organización te proporcionará un código único de validación. Debes ingresar este código en la app en un plazo de 72 hrs después de finalizado el evento para confirmar tu asistencia.</p>
+                    </div>
+                </div>
+    
+                <!-- Preguntas generales -->
+                <div class="contenedor-preguntas" data-categoria="App">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Dónde puedo descargar la app VoluntRED? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">La aplicación VoluntRED estará disponible de forma gratuita tanto en Google Play para dispositivos Android como en App Store para iOS. Solo busca "VoluntRED" en la tienda de apps de tu preferencia.</p>
+                    </div> 
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Puedo usar la aplicación en mi computadora? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Por el momento, VoluntRED solo está disponible en dispositivos móviles. No existe una versión de escritorio de la aplicación. Sin embargo, puedes visitar nuestro sitio web desde cualquier computadora.</p>
+                    </div>
+                </div>
+    
+                <!-- Preguntas asociaciones -->
+                <div class="contenedor-preguntas" data-categoria="ONG">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Las Asociaciones/ONG'S deben cumplir requisitos para unirse? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Sí, todas las asociaciones deben estar legalmente constituidas y proporcionar documentación que valide su estado para unirse. Esto asegura seriedad.</p>
+                    </div>
+                
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Las publicaciones de eventos tienen algún costo? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">No, las organizaciones pueden publicar eventos y oportunidades de forma completamente gratuita en VoluntRED.</p>
+                    </div>
+                </div>
+    
+                <!-- Preguntas plataforma -->
+                <div class="contenedor-preguntas" data-categoria="generales">
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Cómo funciona la plataforma de voluntariado? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">La plataforma conecta a voluntarios con ong's que buscan apoyo para sus causas (asociaciones). Los voluntarios se registran y buscan eventos según sus intereses. Las asociaciones publican oportunidades de voluntariado abiertas.
+                        </p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿Hay algún costo por usar la plataforma? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">No, la aplicación y plataforma de VoluntRED son 100% gratuitas para voluntarios y organizaciones sin fines de lucro. No hay tarifas, comisiones o costos ocultos.</p>
+                    </div>
+                    <div class="contenedor-pregunta">
+                        <p class="pregunta">¿VoluntRED es una organización sin fines de lucro? <img src="./img/plus_math_icon_214186.svg" alt="Abrir Respuesta" /></p>
+                        <p class="respuesta">Sí, VoluntRED es una plataforma creada como una iniciativa de impacto social positivo, sin buscar beneficio económico.</p>
+                    </div>
+                </div>
+    
+    
+    
+    
+            </div>
+        </main>
+        
+        
+        
+     
+   
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <a href="index.html" class="menu__logo">VoluntRED</a>
+            </div>
+            
+            <div class="footer__info">
+                <p>La app se encuentra en:</p>
+            
+                <div class="footer__icons">
+
+                    <a href="https://linktr.ee/voluntred" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M33.375,0c-2.83594,0.19141 -5.87109,1.87891 -7.75,4.15625c-1.64453,2.00391 -3.02344,4.94531 -2.5,8c-0.46875,-0.14453 -0.89453,-0.16016 -1.40625,-0.34375c-1.39453,-0.49609 -2.98828,-1.03125 -4.96875,-1.03125c-3.93359,0 -7.96094,2.33984 -10.5,6.25c-3.69531,5.67969 -2.95312,15.67578 2.65625,24.21875c0.98828,1.5 2.14063,3.13672 3.5625,4.4375c1.42188,1.30078 3.14063,2.29297 5.15625,2.3125c1.72266,0.01953 2.92188,-0.55469 4,-1.03125c1.07813,-0.47656 2.08203,-0.89844 3.96875,-0.90625c0.01172,0 0.01953,0 0.03125,0c1.87891,-0.01562 2.85156,0.39844 3.90625,0.875c1.05469,0.47656 2.24219,1.07813 3.96875,1.0625c2.05469,-0.01562 3.80078,-1.14062 5.25,-2.53125c1.44922,-1.39062 2.64063,-3.09766 3.625,-4.59375c1.41016,-2.14844 1.97656,-3.32031 3.0625,-5.71875c0.11328,-0.25 0.11719,-0.53906 0.00781,-0.79297c-0.10547,-0.25391 -0.3125,-0.45312 -0.57031,-0.55078c-3.55469,-1.34375 -5.58203,-4.48828 -5.875,-7.8125c-0.29297,-3.32422 1.11328,-6.74609 4.65625,-8.6875c0.26172,-0.14062 0.44531,-0.38672 0.50781,-0.67578c0.05859,-0.28906 -0.01172,-0.59375 -0.19531,-0.82422c-2.54297,-3.16016 -6.12109,-5.03125 -9.625,-5.03125c-2.23437,0 -3.875,0.52734 -5.21875,1.03125c-0.22266,0.08594 -0.38672,0.07813 -0.59375,0.15625c1.36328,-0.71875 2.56641,-1.71484 3.46875,-2.875c1.64063,-2.10547 2.90625,-5.10156 2.4375,-8.25c-0.07812,-0.51562 -0.54297,-0.88281 -1.0625,-0.84375zM32.3125,2.375c-0.06641,2.01953 -0.75781,3.99609 -1.90625,5.46875c-1.20312,1.54688 -3.22656,2.61719 -5.1875,2.9375c0.03516,-1.94141 0.80078,-3.95312 1.96875,-5.375c1.22656,-1.48437 3.25781,-2.55469 5.125,-3.03125zM16.75,12.78125c1.61328,0 2.90625,0.41797 4.28125,0.90625c1.375,0.48828 2.82422,1.0625 4.53125,1.0625c1.66797,0 2.98828,-0.57812 4.28125,-1.0625c1.29297,-0.48437 2.58203,-0.90625 4.5,-0.90625c2.50391,0 5.21094,1.30078 7.34375,3.5625c-3.41406,2.41016 -5.01172,6.16797 -4.6875,9.8125c0.32422,3.68359 2.54297,7.17969 6.1875,9c-0.78906,1.71875 -1.30859,2.85547 -2.46875,4.625c-0.95703,1.45703 -2.09375,3.05078 -3.34375,4.25c-1.25,1.19922 -2.57422,1.95703 -3.90625,1.96875c-1.28516,0.01172 -2.01562,-0.37109 -3.125,-0.875c-1.10937,-0.50391 -2.54297,-1.08203 -4.75,-1.0625c-2.20312,0.01172 -3.65625,0.56641 -4.78125,1.0625c-1.125,0.49609 -1.86328,0.88672 -3.15625,0.875c-1.36719,-0.01172 -2.63672,-0.67578 -3.84375,-1.78125c-1.20703,-1.10547 -2.29687,-2.61328 -3.25,-4.0625c-5.25,-8 -5.67187,-17.39844 -2.65625,-22.03125c2.21094,-3.40234 5.72266,-5.34375 8.84375,-5.34375z"></path></g></g>
+                        </svg>
+                    </a>
+
+                    <a href="https://linktr.ee/voluntred" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+                            <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16.375,-0.03125c-0.04297,0.00781 -0.08594,0.01953 -0.125,0.03125c-0.32812,0.07422 -0.59766,0.30469 -0.71875,0.62109c-0.12109,0.31641 -0.07422,0.66797 0.125,0.94141l2.125,3.1875c-3.59766,1.89063 -6.17969,5.15234 -6.78125,9.03125c0,0.01172 0,0.01953 0,0.03125c0,0.01172 0,0.01953 0,0.03125c0,0.03125 0,0.0625 0,0.09375c0,0.01953 0,0.04297 0,0.0625c-0.00391,0.05078 -0.00391,0.10547 0,0.15625v1.40625c-0.59375,-0.34766 -1.26562,-0.5625 -2,-0.5625c-2.19922,0 -4,1.80078 -4,4v12c0,2.19922 1.80078,4 4,4c0.73438,0 1.40625,-0.21484 2,-0.5625v2.5625c0,1.64453 1.35547,3 3,3h1v6c0,2.19922 1.80078,4 4,4c2.19922,0 4,-1.80078 4,-4v-6h4v6c0,2.19922 1.80078,4 4,4c2.19922,0 4,-1.80078 4,-4v-6h1c1.64453,0 3,-1.35547 3,-3v-2.5625c0.59375,0.34766 1.26563,0.5625 2,0.5625c2.19922,0 4,-1.80078 4,-4v-12c0,-2.19922 -1.80078,-4 -4,-4c-0.73437,0 -1.40625,0.21484 -2,0.5625v-1.375c0.01172,-0.09375 0.01172,-0.1875 0,-0.28125c0,-0.01172 0,-0.01953 0,-0.03125c0,-0.01172 0,-0.01953 0,-0.03125c-0.58203,-3.90625 -3.16406,-7.19531 -6.78125,-9.09375l2.125,-3.1875c0.24609,-0.33594 0.25391,-0.78906 0.02344,-1.13672c-0.22656,-0.34766 -0.64844,-0.51953 -1.05469,-0.42578c-0.25781,0.05859 -0.48437,0.21484 -0.625,0.4375l-2.34375,3.46875c-1.64844,-0.59375 -3.46094,-0.90625 -5.34375,-0.90625c-1.88281,0 -3.69531,0.3125 -5.34375,0.90625l-2.34375,-3.46875c-0.19922,-0.32031 -0.5625,-0.5 -0.9375,-0.46875zM25,5c1.87891,0 3.64063,0.36719 5.1875,1.03125c0.03125,0.01172 0.0625,0.02344 0.09375,0.03125c3.12891,1.37109 5.40625,3.9375 6.28125,6.9375h-23.125c0.86328,-2.95703 3.09375,-5.49219 6.15625,-6.875c0.06641,-0.02344 0.12891,-0.05469 0.1875,-0.09375c1.55469,-0.67187 3.32813,-1.03125 5.21875,-1.03125zM19.5,8c-0.83203,0 -1.5,0.67188 -1.5,1.5c0,0.83203 0.66797,1.5 1.5,1.5c0.82813,0 1.5,-0.66797 1.5,-1.5c0,-0.82812 -0.67187,-1.5 -1.5,-1.5zM30.5,8c-0.82812,0 -1.5,0.67188 -1.5,1.5c0,0.83203 0.67188,1.5 1.5,1.5c0.83203,0 1.5,-0.66797 1.5,-1.5c0,-0.82812 -0.66797,-1.5 -1.5,-1.5zM13,15h24v22c0,0.5625 -0.4375,1 -1,1h-7.8125c-0.13281,-0.02734 -0.27344,-0.02734 -0.40625,0h-11.59375c-0.13281,-0.02734 -0.27344,-0.02734 -0.40625,0h-1.78125c-0.5625,0 -1,-0.4375 -1,-1zM9,17c1.11719,0 2,0.88281 2,2v12c0,1.11719 -0.88281,2 -2,2c-1.11719,0 -2,-0.88281 -2,-2v-12c0,-1.11719 0.88281,-2 2,-2zM41,17c1.11719,0 2,0.88281 2,2v12c0,1.11719 -0.88281,2 -2,2c-1.11719,0 -2,-0.88281 -2,-2v-12c0,-1.11719 0.88281,-2 2,-2zM17,40h4v6c0,1.11719 -0.88281,2 -2,2c-1.11719,0 -2,-0.88281 -2,-2zM29,40h4v6c0,1.11719 -0.88281,2 -2,2c-1.11719,0 -2,-0.88281 -2,-2z"></path></g></g>
+                            </svg>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    <script src="js/preguntasFrecuentes.Js"></script>
+    <script src="js/navegador.js"></script>
+    <script src="js/categorias.js"></script>
+</body>
+</html>
